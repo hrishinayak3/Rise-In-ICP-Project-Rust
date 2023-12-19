@@ -23,8 +23,8 @@ enum VoteError{
     UpdateError
 }
 
-#[derive[Debug, CandidType, Deserialize ]]
-Struct Proposal{
+#[derive(Debug, CandidType, Deserialize )]
+Struct Proposal {
     description: String,
     approve : u32,
     reject : u32,
@@ -34,7 +34,7 @@ Struct Proposal{
     owner : candid::Principal,
 }
 
-#[derive[Debug, CandidType, Deserialize]]
+#[derive(Debug, CandidType, Deserialize)]
 
 Struct  CreateProposal{
     description: String,
